@@ -1,0 +1,123 @@
+
+
+.filter{
+    padding: 20px 60px;
+    display: none;
+    /* justify-content: center; */
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.filter__btndiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 28%;
+    position: relative;
+}
+
+
+.filter__btndiv::after{
+    content: '';
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
+    right: 1%;
+    width: 1px;
+    background-color: #B0B0B0;
+}
+
+
+.btn{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(221, 221, 221);
+    outline: navajowhite;
+}
+
+.btn__filter{
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 30px;
+    font-size: 12px;
+    color: #222222;
+    font-weight: 300;
+    line-height: 16px;
+    white-space: nowrap;
+}
+
+.btn__filter{
+    background: inherit;
+
+}
+
+.btn__filter:first-child{
+    margin-left: unset;
+}
+
+.filterbtn__text{
+    padding: 0 10px;
+}
+/* 
+.filter__listdiv{
+    display: flex;
+     overflow-x: hidden; 
+    flex-basis: 67%;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+}
+
+.filter__listdiv::-webkit-scrollbar{
+    display: none;
+}
+
+.list__btn{
+    border: none;
+    outline: none;
+    outline: none;
+    white-space: nowrap;
+} */
+
+
+/* .filterList__container{
+    flex-basis: 67%;
+} */
+
+
+
+@media(min-width: 744px){
+    .filter{
+        display: flex;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        position: sticky;
+        -webkit-position: sticky;
+        top: 0;
+        background: #fff;
+        z-index: 10000;
+    }
+}
+
+
+@media(min-width: 949px){
+    /* .filter{
+        display: flex;
+        /* flex-wrap: nowrap; */
+        /* align-items: center;
+        flex-wrap: wrap; 
+    }
+
+    .filter__btndiv{
+        flex-basis: 28%;
+    } */ 
+
+    .btn__filter{
+        font-size: 14px;
+    }
+
+    .filter__btndiv::after{
+        right: 6%;
+    }
+    
+}

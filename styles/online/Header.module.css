@@ -1,0 +1,163 @@
+
+
+.header{
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 2px, rgba(0, 0, 0, 0.05) 0px 4px 12px;
+}
+
+.nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+
+.nav__items{
+    width: 40%;
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: center;
+    align-items: center;
+}
+
+.glob__icon{
+    margin: 5px 20px 0;
+}
+
+.gicon{
+    width: 0.8em!important;
+}
+
+.man__bar{
+    position: relative;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.man__and__bar{
+    margin-top: 5px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 30px;
+    width: 70px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 100ms ease-out;
+}
+
+.man__and__bar:hover{
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 2px, rgba(0, 0, 0, 0.05) 0px 4px 12px;
+}
+
+
+.small__nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.s_nav_first, .s_nav_second{
+    display: flex;
+    align-items: center;
+}
+
+.small__nav__icons{
+    width: 0.7em!important;
+}
+
+.sm__left{
+    margin: 0 10px 0 20px;
+}
+
+.ad__date{
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+
+.s_nav_second{
+    padding-left: 12px;
+    position: relative;
+}
+
+.s_nav_second::before{
+    content: '';
+    background-color: rgb(221, 221, 221);
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
+    left: 0;
+    /* inset: 20% initial 20% 0; */
+    width: 1px;
+}
+
+.sm__menutype{
+    margin-right: 20px;
+}
+
+
+
+@media(max-width: 743px){
+
+.header{
+    position: fixed;
+    width: 90%;
+    height: 45px;
+    top: 23px;
+    right: 5%;
+    left: 5%;
+    border-radius: 30px;
+    z-index: 10000;
+}
+
+.makeHeaderStyle{
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 0;
+    top: 0;
+    height: 100px;
+    transition: all 100ms ease-in-out;
+
+}
+
+.nav{
+    display: none;
+}
+
+
+.secNavStyle{
+    align-items: flex-start;
+    padding: 15px 0;
+    transition: 300ms ease;
+}
+
+}
+
+
+@media(min-width: 744px){
+    .small__nav{
+       display: none;
+}
+
+}
+
+@media(min-width: 949px){
+.nav{
+    padding: 0 60px;
+}
+
+.nav__items{
+    width: 30%;
+}
+    
+}

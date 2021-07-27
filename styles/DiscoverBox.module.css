@@ -1,0 +1,58 @@
+.discover__content_pic{
+    width: 100%;
+    border-radius: 12px;
+}
+
+
+.discover__box{
+    margin-bottom: 0;
+    scroll-snap-align: start;
+    
+}
+
+.discover__heading{
+    margin-top: 4px;
+    margin-bottom: 0;
+    white-space: nowrap;
+    color: rgb(34, 34, 34);
+    font-weight: 500;
+}
+
+.discover__subheading{
+    margin-top: 5px;
+    line-height: 1.1em;
+    color: rgb(34, 34, 34);
+}
+
+@media(min-width: 744px){
+    .discover__heading{
+      font-size: 26px;
+    }
+
+    .discover__subheading{
+        font-size: 22px;
+    }
+}
+
+
+@media(min-width: 768px){
+    .discover__heading{
+        font-size: 20px;
+      }
+      
+      .discover__subheading{
+        font-size: 16px;
+      }
+}
+
+@media(min-width: 1128px){
+    .discover__heading{
+        font-size: 18px;
+      }
+      
+      .discover__subheading{
+        font-size: 14px;
+      }
+}
+
+

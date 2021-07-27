@@ -1,0 +1,115 @@
+
+
+.inspiration__container{
+    position: relative;
+       
+}
+
+.all__wrapper{
+    position: absolute;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.tab__head__container{
+    position: relative;
+}
+.tab__buttons{
+    /* position: relative; */
+    /* position: absolute; */
+    width: 100%;
+
+    padding: 10px 0 0;
+    border-bottom: 1px solid rgb(245 233 233);
+
+}
+
+.btnIns{
+    position: absolute;
+    border: none;
+    top: 28px;
+    transform: translateY(-50%);
+    outline: none;
+    background-color: rgb(247 247 247 / 72%);
+    z-index: 1000;
+}
+
+.BtnInsLeft{
+    left: -20px;
+}
+
+.BtnInsRight{
+    right: -20px;
+}
+
+.pointer__none{
+    pointer-events: none;
+    width: 0.7em !important;
+}
+
+.btn__for__footer_tab{
+    border: none;
+    outline: none;
+    margin: 0 12px;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(34, 34, 34);
+    background: inherit;
+    transition: 300ms ease-in;
+    padding: 8px initial;
+
+}
+
+
+.btn__for__footer_tab:nth-child(1){
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.btn__for__footer_tab:hover{
+    background: #efefef;
+}
+
+.active__tab{
+    color: #000;
+    border-bottom: 2px solid #000;
+    animation: blinkText 750ms linear;
+}
+
+@keyframes blinkText {
+    0%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@media(min-width: 1250px) {
+
+    .all__wrapper{
+      padding: 0 60px;
+    }
+ 
+  
+  }
+
+@media(max-width: 1050px){
+.tab__buttons{
+    display: flex;
+    overflow-x: scroll;
+}
+    
+.btn__for__footer_tab{
+    white-space: nowrap;
+}
+
+}
+
+@media(min-width: 1050px){
+
+.btnIns{
+display: none;
+}
+
+}

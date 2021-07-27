@@ -1,0 +1,46 @@
+
+
+
+
+
+
+.bearbyblock{
+    display: flex;
+    align-items: center;
+    scroll-snap-align: start
+
+}
+
+.img__nearby{
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+}
+
+.nearby__title_block{
+    padding-left: 12px;
+}
+
+.nearby_name, .nearby_driving_time{
+    font-weight: 600;
+}
+
+.nearby_name{
+
+}
+
+
+.nearby_driving_time{
+    margin-top: -20px;
+    color: #717171;
+}
+
+@media(min-width: 768px) {
+.nearby__title_block{
+    padding-left: 15px;
+}
+.img__nearby{
+    width: 65px;
+    height: 65px;
+}
+}

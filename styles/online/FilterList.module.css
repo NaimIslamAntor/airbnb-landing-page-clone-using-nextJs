@@ -1,0 +1,102 @@
+
+.list__container{
+    position: relative;
+    overflow: hidden;
+    flex-basis: 67%;
+}
+
+/* .list__container{
+  -ms-scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
+} */
+
+
+.filter__listdiv{
+    display: flex;
+    /* overflow-x: hidden; */
+    /* flex-basis: 67%; */
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.filter__listdiv{
+    /* -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory; */
+}
+
+.filter__listdiv::-webkit-scrollbar{
+    display: none;
+}
+
+
+.list__btn{
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 30px;
+    font-size: 12px;
+    color: #484848;
+    font-weight: 300;
+    line-height: 16px;
+
+}
+
+
+
+.list__btn{
+    border: none;
+    outline: none;
+    outline: none;
+    white-space: nowrap;
+}
+
+
+.list__btn{
+/* scroll-snap-align: start; */
+
+}
+
+
+
+.move__btn{
+    position: absolute;
+    top: 0;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 50%;
+    background-color: #fff;
+    width: 40px; 
+    height: 40px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.move__left{
+    left: 0;
+    box-shadow: 6px 3px 10px #ffffffe0;
+}
+
+
+
+.move__right{
+    right: 0;
+    box-shadow: -6px 3px 10px #ffffffe0;
+}
+
+.icon__sizing{
+    width: 0.5em!important;
+}
+
+@media(min-width: 949px){
+    /* .list__container{
+        flex-basis: 67%;
+    } */
+
+    
+.list__btn{
+    font-size: 14px;
+}
+
+}

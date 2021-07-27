@@ -1,0 +1,151 @@
+
+.visitCard{
+    cursor: pointer;
+}
+
+.imgAndVideo{
+    position: relative;
+    height: 247px;
+}
+
+.imgVideo{
+    display: none;
+}
+
+.makeBlock{
+    display: block;
+}
+
+.visitCardImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 13px;
+    margin-bottom: -1px;
+}
+
+.heartIconOnImg{
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    color: #5d5858;
+    z-index: 100;
+}
+
+
+.soldOrNot{
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    background-color: #fff;
+    padding: 3px 7px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #222222;
+    border-radius: 5px;
+    font-weight: 500;
+    box-shadow: 0px 1px 8px #222222;
+}
+
+.playPauseBtn{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 0.7em!important;
+    color: #fff;
+}
+
+
+
+.rateAndHead{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.rateAndHead, .priceAndFrom{
+    color: #717171;
+}
+.starRating{
+    /*width: 0.7em!important; */
+    color: #FF385C !important;
+    padding-top: 10px;
+}
+
+
+.head {
+    font-weight: 400;
+    font-size: 16px;
+    color: #222222;
+    margin-top: 7px;
+    margin-bottom: 0;
+}
+
+.priceAndFrom{
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.fromText{
+    color: #000;
+}
+
+.visitCard:first-child .head{
+    padding-right: 20px;
+}
+
+
+@media(min-width: 600px){
+
+.imgAndVideo{
+    height: 340px;  
+}
+
+}
+        
+    
+
+@media(min-width: 700px){
+    .imgAndVideo{
+        height: 280px;  
+}
+          
+}
+        
+    
+    
+    /* @media(min-width: 880px){
+    
+
+            
+    }
+    
+    @media(min-width: 1060px){
+    
+
+                
+    } */
+
+@media(min-width: 1000px){
+    /* .imgVideo{
+        display: none;
+    } */
+    
+    /* .makeBlock{
+        display: block;
+    } */
+    
+}
+
+@media(max-width: 1200px){
+    .playPauseBtn{
+       display: none!important;
+    }
+    
+}
+    
+@media(min-width: 1240px){
+.imgAndVideo{
+  height: 247px;  
+}
+        
+}

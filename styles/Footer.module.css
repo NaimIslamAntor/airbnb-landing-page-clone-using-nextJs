@@ -1,0 +1,31 @@
+
+.footer__inner__container{
+    padding: 0 0 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.container__child{
+    padding: 0 60px;
+}
+
+.footer__container{
+    background-color: #f7f7f7;
+    border-top: 1px solid #DDDDDD;
+    padding: 30px 0;
+}
+
+
+@media(min-width: 743px){
+.footer__inner__container{
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+
+
+@media(min-width: 1050px){
+.footer__inner__container{
+    grid-template-columns: repeat(4, 1fr);
+}
+}

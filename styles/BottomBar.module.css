@@ -1,0 +1,64 @@
+
+
+
+.bottomBar{
+    display: grid;
+    place-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    z-index: 100000;
+}
+
+.btnBottombar{
+    background-color: inherit;
+    border: none;
+    outline: none;
+
+}
+
+.btnCap{
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 600;
+}
+
+
+
+
+.wishFancy, .loginFancy{
+    color: rgb(176, 176, 176) !important;
+}
+
+
+.btnCap{
+    color: rgb(176, 176, 176);
+}
+
+.searchCap{
+    color: #000!important;
+}
+
+/*rgb(176, 176, 176) !important*/
+
+.btnIcons{
+    width: 30px!important;
+    height: 30px!important;
+}
+
+.searchFancy{
+    color: rgb(255, 56, 92) !important;
+}
+
+.wishList{
+    margin: 0 35px;
+}
+
+@media(min-width: 744px){
+    .bottomBar{
+        display: none;
+    }
+}

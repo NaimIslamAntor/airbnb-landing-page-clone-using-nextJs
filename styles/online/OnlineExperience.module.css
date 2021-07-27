@@ -1,0 +1,85 @@
+
+.online__experienc{
+   
+}
+
+.text__image__block{
+    background-image: url(/images/onlineexp3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 60px; 
+    height: 80vh;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    background-attachment: scroll;
+    position: relative;
+}
+
+.exp__headline{
+    margin-top: 0;
+    color: #222222;
+}
+
+
+.exp__headline{
+    font-size: 52px;
+    line-height: 56px
+}
+
+.exp__paragraph{
+    font-size: 18px;
+    line-height: 26px;
+    color: #222222;
+}
+
+
+@media(max-width: 744px){
+    .online__experienc{
+        height: calc(80vh + 200px);
+    }
+    .text__image__block{
+     height: 100%;
+     align-items: flex-end;
+    }
+
+    .text{
+        z-index: 1;
+    }
+
+    .text__image__block::before{
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: #000;
+      z-index: 1;
+      opacity: 0.5;
+    }
+    
+    .exp__headline, .exp__paragraph{
+   color: #fff;
+    }
+    
+    
+    
+}
+
+@media(max-width: 405px){
+    .online__experienc{
+        height: 500px;
+    }  
+
+    .exp__headline {
+        font-size: 35px;
+        line-height: 38px;
+    }
+}
+
+
+@media(min-width: 744px){
+  
+    
+    .text__image__block{
+        background-image: url(/images/onlineexp2.webp);
+    }
+}

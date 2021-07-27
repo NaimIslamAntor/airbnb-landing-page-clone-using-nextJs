@@ -1,0 +1,35 @@
+
+
+
+/* .nearby__heading{
+    font-size: ;
+} */
+
+.nearby__block{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 268px 268px 268px 268px;
+    overflow-x: scroll;
+}
+
+.nearby__block::-webkit-scrollbar {
+    display: none;
+}
+
+.nearby__block {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    scroll-snap-type: x mandatory;
+  }
+
+@media(min-width: 768px){
+.nearby__block{
+    grid-template-columns: 285px 285px 285px 285px;
+
+}
+    
+.nearby{
+     padding: 30px 60px 15px;
+}
+    
+}

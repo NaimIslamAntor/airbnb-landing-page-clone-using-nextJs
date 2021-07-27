@@ -1,0 +1,21 @@
+
+
+.location__container{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 30px;
+}
+
+.loction__text{
+    color: #000;
+    margin-left: 15px;
+    font-weight: 350;
+    font-size: 17px;
+
+}
+
+.location__image{
+    border-radius: 8px;
+}

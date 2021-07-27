@@ -1,0 +1,19 @@
+
+
+[
+    {
+        "image" : "nearby1.webp",
+        "nearbyName" : "Cox's Bazar",
+        "nearByTime" : "6.5 hour drive"
+    },
+    {
+        "image" : "nearby2.webp",
+        "nearbyName" : "Chottogram",
+        "nearByTime" : "4.5 hour drive"
+    },
+    {
+        "image" : "nearby3.webp",
+        "nearbyName" : "Sylhet",
+        "nearByTime" : "4 hour drive"
+    }
+]

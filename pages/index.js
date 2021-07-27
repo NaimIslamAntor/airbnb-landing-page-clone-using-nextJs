@@ -1,65 +1,112 @@
+import { useState } from 'react';
 import Head from 'next/head'
+import Navbar from '../components/Navbar';
+import HeaderImage from '../components/HeaderImage';
 import styles from '../styles/Home.module.css'
+import NearBy from '../components/NearBy';
+import LiveAnyWhereContainer from '../components/LIveAnyWhereContainer'
+import GreatestOutdoor from '../components/GreatestOutdoor';
+import DiscoverExp from '../components/DiscoverExp';
 
-export default function Home() {
+import InspirationForFuture from '../components/InspirationForFuture';
+import Footer from '../components/Footer';
+
+export default function Home({nearby, liveanywhere, discoverexp}) {
+
+  console.log(discoverexp)
+  const greatestCompSecObjFisStyle = {
+    "color": "#fff"
+  }
+
+  const greatestCompSecObjSecStyle =   {
+    "backgroundColor": "#fff",
+    "color": "rgb(34, 34, 34)"
+  
+  }
+
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Airbnb landing page</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+       <div className={styles.covid_bar}>
+         <a className={styles.covid_link} href="https://www.airbnb.com/resources/hosting-homes?persona=guest">
+         Get the latest on our COVID-19 response</a>
+       </div>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+       <Navbar/>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+       <HeaderImage
+       image="/images/headerbg1.webp"
+        imageBottomLine="Made possible by Hosts" />
+       <NearBy nearbyHeading="Explore nearby" datas={nearby} />
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+      <LiveAnyWhereContainer datas={liveanywhere}/>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+      <GreatestOutdoor
+      key={"1"}
+      image={{img1: "greatestlocation.webp", img2: "greatestlocation2.webp"}}
+      greatestOutDoorHeadingpartone="the"
+      greatestOutDoorHeadingparttwo="greatest outdoors"
+      greatestOutDoorSubHeading="Whishlists Curated by Airbnb"
+      greatestOutDoorBtnText="Get inspired"
+      outdoorStyleObject={{}}
+      btnStyleObject={{}} />
+       
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+      <DiscoverExp
+      heading="Discover Experiences"
+      subheading="Unique activities with local experts—in person or online."
+      datas={discoverexp} />
+      
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+      <GreatestOutdoor
+      key={"2"}
+      image={{img1: "h2.webp", img2: "h1.webp"}}
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      greatestOutDoorHeadingpartone="Become a host"
+      greatestOutDoorHeadingparttwo=""
+
+      greatestOutDoorSubHeading={["Earn extra income and unlock new", <br/>, 
+                                   "opportunities by sharing your space."]}
+      greatestOutDoorBtnText="Learn more"
+
+      outdoorStyleObject={greatestCompSecObjFisStyle}
+
+      btnStyleObject={greatestCompSecObjSecStyle} />
+
+
+      <InspirationForFuture
+        inspirationHeading="Inspiration for future getaways"
+      />
+
+      <Footer/>
+
+
     </div>
   )
+}
+
+
+export async function getStaticProps(){
+  const req1 = await fetch("http://localhost:3000/api/nearby");
+
+  const req2 = await fetch("http://localhost:3000/api/liveanywhere");
+
+ const req3 = await fetch("http://localhost:3000/api/discoverexp");
+
+  const result1 = await req1.json();
+
+  const result2 = await req2.json();
+
+const result3 = await req3.json();
+
+  return{
+      props:{
+        nearby: result1,
+        liveanywhere: result2,
+      discoverexp: result3,
+      }
+  }
 }

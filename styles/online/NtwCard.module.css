@@ -1,0 +1,124 @@
+
+
+.NtwCard{
+    position: relative;
+    min-width: 85%;
+    height: 450px;
+    margin-left: 20px;
+    overflow: hidden;
+    /* scroll-snap-align: start */
+}
+
+
+.NtwCard:first-child{
+    margin-left: 30px;
+}
+
+.ntwCardImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+
+
+.ntwCardTextInfo, .ntwCardBtnInfo{
+    position: absolute;
+    z-index: 100;
+    left: 15px;
+
+}
+
+
+.ntwCardTextInfo{
+    top: 10px;
+}
+
+.ntwText{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 0;
+
+}
+
+
+.smHead{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.bgHead{
+   width: 220px;
+   letter-spacing: -0.2px
+}
+
+
+.ntwCardBtnInfo{
+    bottom: 23px;
+}
+
+
+.ntwShowMoreBtn{
+    background-color: #fff;
+    padding: 8px 13px;
+    border-radius: 8px;
+    font-size: 14px;
+    z-index: 100;
+
+}
+
+
+@media(max-width: 699px){
+
+.NtwCard{
+    scroll-snap-align: start
+}
+    
+}
+    
+
+
+@media(min-width: 744px){
+    .NtwCard:first-child{
+        margin-left: 60px;
+    }
+}
+
+
+@media(min-width: 760px){
+    .NtwCard{
+        height: 600px;
+    }
+    
+}
+
+
+@media(min-width: 949px){
+    .NtwCard{
+        min-width: 46%;
+    }
+
+    .NtwCard{
+        height: 332px;
+    }
+
+    .ntwCardTextInfo, .ntwCardBtnInfo{
+        left: 22px;
+    
+    }
+
+    .ntwCardBtnInfo{
+        bottom: 26px;
+    }
+    
+    
+}
+
+
+@media(min-width: 1300px){
+    .NtwCard{
+        height: auto;
+    }
+}

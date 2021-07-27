@@ -1,0 +1,30 @@
+
+
+.header_Image{
+    width: 100%;
+}
+
+.bottom_line_div{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin-top: -26px;
+    padding: 15px 0;
+}
+
+.bottom_line{
+    font-weight: 400;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+@media(min-width: 1128px){
+    .image_container{
+        padding: 0 30px;
+        background-color: #000;
+    }
+    .header_Image{
+        max-height: 343px;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,28 @@
+
+.footer__col__heading{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    color: #222222;
+    line-height: 16px;
+}
+
+.footer__link{
+    display: block;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 350;
+    line-height: 18px;
+    color: #222222;
+}
+
+/* 
+.footer__link:first-child{
+   text-decoration: underline;
+} */
+
+
+
+.footer__link:hover{
+    text-decoration: underline;
+ }

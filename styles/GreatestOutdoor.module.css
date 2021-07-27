@@ -1,0 +1,123 @@
+.greatest_outdoorparent{
+    padding: 30px;
+   
+}
+
+.greatest__outdoor{
+   
+   position: relative;
+   height: 450px;
+}
+
+
+.greatest__outdoorimage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.greatest__outdoor__content{
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.GreatestOutdoor__heading{
+    text-transform: capitalize;
+    color: rgb(34, 34, 34);
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.big__screen{
+    display: none;
+}
+
+.greatest__outdoorsubheading{
+    margin-top: 5px;
+    color: rgb(34, 34, 34);
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.btn_inspired{
+    background-color: #222222;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+
+@media(min-width: 550px){
+    .greatest__outdoor{
+        height: 680px;
+     }
+}
+
+@media(min-width: 744px){
+    .greatest__outdoor{
+      
+        height: 360px;
+    }
+.greatest__outdoorimage{
+    height: 100%;
+      
+}
+.greatest__outdoor__content{
+    top: 50%;
+    left: 6%;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+
+
+.big__screen{
+        display: block;
+}
+
+.small__screen{
+    display: none;
+}
+
+.greatest__outdoorsubheading{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+    
+}
+
+@media(min-width: 768px){
+.greatest_outdoorparent{
+        padding: 0 60px;
+}
+}
+
+
+@media (min-width: 1128px){
+
+.greatest__outdoor{
+   height: 400px;
+}
+     
+
+.GreatestOutdoor__heading {
+    font-size: 48px;
+    line-height: 52px;
+}
+.greatest__outdoorsubheading{
+    line-height: 24px;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.btn_inspired{
+   font-size: 16px;
+   padding: 15px 25px;
+}
+}

@@ -1,0 +1,140 @@
+.liveanywhere__container{
+    padding: 0 0 0 30px;
+    position: relative;
+  }
+
+.liveanywhere__inner_container{
+     -ms-overflow-style: none;
+    scrollbar-width: none;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+
+}
+
+.liveanywhere__inner_container::-webkit-scrollbar {
+  display: none;
+}
+
+
+.liveanywhere__inner_container{
+  display: grid;
+  /* grid-template-columns: 230px 230px 230px 230px; */
+  grid-template-columns: repeat(4, 230px);
+  grid-gap: 0 12px;
+  overflow-x: scroll;
+  
+ 
+
+}
+
+.leftright__overall{
+   width: 30px !important;
+    height: 30px !important;
+    border-radius: 50% !important;
+    background-color: #fff;
+    /* font-size: 10px!important; */
+    color: #b7acac;
+    font-weight: 400;
+    border: 1px solid #dcd4d4;
+    z-index: 100;
+}
+
+.anywhere__lefticon, .anywhere__righticon{
+   position: absolute;
+   top: 50%;
+}
+
+.anywhere__lefticon{
+left: 2%;
+
+  } 
+
+.anywhere__righticon{
+    right: 2%;
+}
+
+@media(min-width: 650px) {
+  .liveanywhere__inner_container{
+    /* grid-template-columns: 255px 255px 255px 255px; */
+  }
+
+
+}
+
+
+@media(min-width: 743px) {
+
+  .liveanywhere__container{
+    padding: 0 30px;
+  }
+
+  .liveanywhere__inner_container{
+    grid-template-columns: repeat(4, 32%);
+    /* grid-template-columns: 235px 235px 235px 235px; */
+    grid-gap: 0 18px;
+  }
+
+}
+
+
+@media(min-width: 768px) {
+  .liveanywhere__inner_container{
+
+    /* grid-template-columns: 235px 235px 235px 235px; */
+    /* grid-gap: 0 18px; */
+  }
+
+
+  .liveanywhere__container{
+    padding: 0 30px;
+  }
+
+}
+
+@media(min-width: 949px) {
+  .liveanywhere__inner_container{
+    /* grid-template-columns: 285px 285px 285px 285px; */
+    /* grid-gap: 0 20px; */
+  }
+  .liveanywhere__container{
+    padding: 0 40px;
+  }
+
+}
+
+
+@media(min-width: 1128px) {
+
+
+  .liveanywhere__inner_container{
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 0 1.5%;
+  }
+
+  .anywhere__lefticon, .anywhere__righticon{
+    display: none !important;
+ }
+
+}
+
+
+
+@media(min-width: 1250px) {
+
+  .liveanywhere__container{
+    padding: 0 60px;
+  }
+  /* .liveanywhere__inner_container{
+    grid-template-columns: repeat(4, 23%);
+    grid-gap: 0 2%;
+  } */
+
+}
+
+@media(max-width: 742px){
+  .anywhere__lefticon, .anywhere__righticon{
+    display: none !important;
+}
+}

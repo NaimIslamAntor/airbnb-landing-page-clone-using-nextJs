@@ -14,3 +14,15 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+.move__for_header{
+  position: absolute;
+  width: 480px;
+  bottom: -140%;
+  left: 18%;
+}
+
+.new_g_post_location{
+  bottom: -50%;
+}
